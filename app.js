@@ -81,8 +81,7 @@ function reset(){
     miliSecInput.innerHTML = 00;
 }
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml6 .letters');
+let textWrapper = document.querySelector('.ml6 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: true})
@@ -98,4 +97,4 @@ anime.timeline({loop: true})
     duration: 1000,
     easing: "easeOutExpo",
     delay: 1000
-  });
+});
