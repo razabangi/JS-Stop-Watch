@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Stop Watch | Assignment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="stop-watch">            
+            <div class="watch-container">
+                <h1>Stop Watch</h1>
+                <div class="watch-box">
+                    <div class="watch">
+                        <div id="hour-count">00</div>
+                        <p>Hour</p>
+                         <svg>
+                            <circle id="counter1" stroke="red" cx="100" cy="100" r="70"></circle>
+                        </svg>
+                    </div>
+                    <div class="watch">
+                        <div id="min-count">00</div>
+                        <p>Minute</p>
+                         <svg>
+                            <circle id="counter2" stroke="blue" cx="100" cy="100" r="70"></circle>
+                        </svg>
+                    </div>
+                    <div class="watch">
+                        <div id="sec-count">00</div>
+                        <p>Second</p>
+                         <svg>
+                            <circle id="counter3" stroke="purple" cx="100" cy="100" r="70"></circle>
+                        </svg>
+                    </div>
+                    <div class="watch">
+                        <div id="milisec-count">00</div>
+                        <p>Mili second</p>
+                         <svg>
+                            <circle id="counter4" stroke="green" cx="100" cy="100" r="70"></circle>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="controller">
+                    <div class="start">
+                        <button id="startBtn" onclick="start(this)">start</button>
+                    </div>
+                    <div class="stop">
+                        <button id="stopBtn" onclick="stop(this)">stop</button>
+                    </div>
+                    <div class="reset">
+                        <button id="resetBtn" onclick="reset()">reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="app.js"></script>
+</html>
